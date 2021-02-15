@@ -10,3 +10,7 @@ output "public_ip" {
 output "az_instance_location" {
   value = [aws_instance.this.*.availability_zone]
 }
+
+output "instance_id" {
+  value = [aws_instance.this.*.id]
+  }
